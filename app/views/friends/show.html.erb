@@ -1,8 +1,30 @@
-<p style="color: green"><%= notice %></p>
+<div id="<%= dom_id @friend %>">
+  <p>
+    <strong>First Name:</strong>
+    <%= @friend.first_name %>
+  </p>
 
-<%= render @friend %>
+  <p>
+    <strong>Last Name:</strong>
+    <%= @friend.last_name %>
+  </p>
 
-<div>
+  <p>
+    <strong>Email:</strong>
+    <%= @friend.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= @friend.phone %>
+  </p>
+
+  <p>
+    <strong>Twitter:</strong>
+    <%= @friend.twitter %>
+  </p>
+
+</div>
   <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
   <%= link_to "Back to friends", friends_path %>
 
