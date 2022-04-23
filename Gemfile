@@ -9,6 +9,8 @@ gem "sprockets-rails"
 
 gem "sqlite3", "~> 1.4"
 
+gem "devise", '~>4.7', '>=4.7.3'
+
 gem "puma", "~> 5.0"
 
 gem "importmap-rails"
