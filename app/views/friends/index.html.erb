@@ -6,14 +6,17 @@
     <th>Email</th>
     <th>Phone</th>
     <th>Twitter</th>
+    <th>User ID</th>
   </tr>
   </thead>
 
   <tbody>
   <tr>
   <% @friends.each do |friend| %>
+    <% if friend.user == current_user %>
     <%= render friend %>
     </tbody>
+  <% end %>
   <% end %>
   
 </table>
